@@ -1,0 +1,52 @@
+{
+  "model_file": "B_aug_1.onnx",
+  "input_name": "mel",
+  "output_name": "logits",
+  "input_shape": [
+    1,
+    1,
+    40,
+    101
+  ],
+  "classes": [
+    "yes",
+    "no",
+    "up",
+    "down",
+    "left",
+    "right",
+    "on",
+    "off",
+    "stop",
+    "go",
+    "unknown"
+  ],
+  "unknown_index": 10,
+  "mean": -6.44285249710083,
+  "std": 4.832808017730713,
+  "audio": {
+    "sample_rate": 16000,
+    "clip_len": 16000,
+    "format": "mono float32 en [-1, 1], pad con ceros hasta 16000"
+  },
+  "logmel": {
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "n_mels": 40,
+    "f_min": 20.0,
+    "f_max": 7600.0,
+    "eps": 1e-06,
+    "power": 2.0,
+    "window": "hann periodica de 400 muestras, centrada en n_fft=512",
+    "center": true,
+    "pad_mode": "reflect (n_fft/2 a cada lado)",
+    "mel_scale": "htk",
+    "mel_norm": null,
+    "pipeline": "log(mel_power + eps) -> (x - mean) / std"
+  },
+  "inference": {
+    "softmax_threshold_suggested": 0.7,
+    "unknown_means_no_action": true
+  }
+}

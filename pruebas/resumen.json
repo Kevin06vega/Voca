@@ -1,0 +1,29 @@
+{
+  "pruebas": [
+    {
+      "tipo": "android",
+      "tests": 2,
+      "fallos": 0,
+      "errores": 0
+    },
+    {
+      "tipo": "unitarias",
+      "tests": 5,
+      "fallos": 0,
+      "errores": 0
+    }
+  ],
+  "lint_errores": 0,
+  "lint_advertencias": 7,
+  "emulador": "Medium_Phone_API_36.1 / Android 16 / API 36.1",
+  "microfono_fisico": "Pendiente",
+  "voz_emulador_manual": {
+    "fecha": "2026-10-14",
+    "dispositivo_virtual": "Pixel_8_Pro",
+    "entrada": "iPhone mediante WO Mic, entrada virtual de Windows",
+    "fuente_resultados": "Prueba manual reportada por el usuario",
+    "comandos_reportados_correctos": ["up", "down", "left", "right", "go"],
+    "comandos_pendientes_confirmacion": ["yes", "no", "on", "off", "stop"],
+    "nota": "Prueba funcional preliminar; no constituye una medicion de accuracy."
+  }
+}

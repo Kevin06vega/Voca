@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.voca.VocaUiTest" tests="2" failures="0" errors="0" skipped="0" time="9.737" timestamp="2026-10-14T05:29:49" hostname="localhost">
+  <properties>
+    <property name="device" value="Medium_Phone_API_36.1(AVD) - 16" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="touchNavigationConfirmationRoutineAndLocalModelWorkWithoutMicrophone" classname="com.voca.VocaUiTest" time="8.441" />
+  <testcase name="notebookVectorsMatchAndroidFrontendAndInference" classname="com.voca.voice.ModelParityTest" time="0.61" />
+</testsuite>

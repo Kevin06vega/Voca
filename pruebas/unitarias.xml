@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.voca.VocaStateTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-14T05:26:42.275Z" time="0.041">
+  <properties/>
+  <testcase name="routineStopRestoresOriginalDeviceStateEvenAfterSwitchingRoutine" classname="com.voca.VocaStateTest" time="0.028"/>
+  <testcase name="allNavigationAndMicrophoneTargetsAreReachableByVoice" classname="com.voca.VocaStateTest" time="0.005"/>
+  <testcase name="deviceCommandsChangeOnlyTheOpenedDevice" classname="com.voca.VocaStateTest" time="0.006"/>
+  <testcase name="allLightsOffRequiresConfirmationAndCancelPreservesState" classname="com.voca.VocaStateTest" time="0.0"/>
+  <testcase name="unknownAndOutOfContextCommandsDoNotChangeDevices" classname="com.voca.VocaStateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
