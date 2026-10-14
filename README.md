@@ -47,14 +47,6 @@ En un teléfono, pulsa el panel del micrófono y concede el permiso cuando Andro
 
 Los dispositivos son simulados. El comando `stop` detiene la rutina; el botón del micrófono activa o desactiva la escucha. Al salir de la app se pausa la captura, y debe activarse de nuevo al regresar. Si se deniega el permiso, siguen disponibles los controles táctiles.
 
-### Voz en el emulador usando el iPhone
-
-WO Mic puede enviar el micrófono del iPhone por Wi-Fi a una PC conectada por Ethernet al mismo router. El cliente y controlador de Windows deben estar instalados, conectados y con `WO Mic Device` como entrada predeterminada. Comprueba primero que el indicador de entrada de Windows responde a tu voz.
-
-Después de iniciar el emulador, activa **Enable Host Microphone Access** en sus controles de micrófono, o ejecuta `Activar microfono del emulador.bat`. El emulador deshabilita esa entrada al reiniciarse. Abre Voca, activa su micrófono y pronuncia una sola palabra inglesa, dejando una pausa. La página Ayuda muestra **Último audio**, confianza y duración de inferencia. Un resultado `unknown` indica que el modelo procesó una ventana de audio sin aceptar un comando. Probar los audios incluidos no activa el micrófono y pausa la escucha en vivo.
-
-Referencias de configuración: [WO Mic](https://wolicheng.com/womic/references.html) y [audio del emulador Android](https://developer.android.com/studio/releases/emulator).
-
 ## Cómo está organizado el código
 
 | Archivo | Responsabilidad |
@@ -92,9 +84,7 @@ Para recompilar en esta PC puedes ejecutar `Compilar.bat`. El APK también se ge
 
 Las pruebas incluidas comprueban navegación, confirmaciones, restauración de rutinas, paridad del modelo y el recorrido de la interfaz. Se ejecutan con `gradlew.bat testDebugUnitTest connectedDebugAndroidTest lintDebug` usando un emulador o teléfono conectado. Las pruebas no activan el micrófono.
 
-## Pendiente de comprobar en el teléfono
 
-Probar los diez comandos con el micrófono real, incluyendo palabras repetidas, ruido y pausas. El umbral 0.7 procede de la configuración entregada; debe justificarse con validación para el informe. La sensibilidad del detector de silencio y el control de repeticiones también deben comprobarse con ese dispositivo.
 
 ## Referencias
 
